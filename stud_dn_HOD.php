@@ -52,18 +52,13 @@ sdgsfg
             <input type="button" value="EDIT" onclick="edtfn()" style="position:absolute;top:92%;left:40%;height:40px;width:115px;border-radius:10px;cursor:pointer;">
             <input type="button" value="Select" onclick="rjt()" style="position:absolute;top:92%;left:55%;height:40px;width:115px;border-radius:10px;cursor:pointer;background-color:#6F8BBA;">
 <input type="button" value="Download details" style="position:absolute;top:92%;left:25%;height:40px;width:145px;border-radius:10px;cursor:pointer;background-color:#6F8BBA;" onclick="csv_dwn()">
-        </div>
-        <input type="Button" value="Download Application List" onclick="csv_dwn()"><input type="Button" value="Download Selected Lst" onclick="csv_dn()"></div>
+        </div><input type="Button" value="Download Selected List" onclick="csv_dn()"></div>
 </body>
 <script>
 crete_list();
-function csv_dwn()
-{
-window.location="print_csv.php";    
-}
 function csv_dn()
 {
-window.location="print_csv_sel_list.php";    
+window.location="print_csv.php";    
 }
 function edtfn()
 {
@@ -119,7 +114,7 @@ function crete_list() { //used for the creation of the list of bookings
                 type: 'POST',
                 dataType: "JSON",
                 data: {
-                    idr: 1,
+                    idr: 7,
                     srh:val1,
                 
                 },
@@ -164,7 +159,7 @@ function updt(ref,idt)
                 type: 'POST',
                 dataType: "JSON",
                 data: {
-                    idr: 2,
+                    idr: 8,
                     srh:ref,
                     selfn:klms,
                 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "scholarship");
+include("dbconnect.php");
 $uidlgn=$_SESSION['login'];
 $dwny=mysqli_fetch_assoc(mysqli_query($conn,"select * from login where uname='$uidlgn';"));
 $batch=$dwny['batch'];

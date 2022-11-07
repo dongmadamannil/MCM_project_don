@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("localhost", "root", "", "scholarship");
+include("dbconnect.php");
 $sqQuery =$_SESSION['fetch_qry'];
 $resObjQuery = mysqli_query($conn, $sqQuery);
 $resObjQuery1 = mysqli_query($conn,"select * from registration_details;");

@@ -51,7 +51,7 @@
                         <i class="bi bi-person-fill"></i>
                     </button>
                     <ul class="dropdown-menu my-3 mx-1  dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href=""><span onclick="lgout()">Log out</span></a></li>
+                      <li><a class="dropdown-item" href="login.php"><span onclick="lgout()">Log out</span></a></li>
                     </ul>
                 </div>
 
@@ -85,7 +85,7 @@
                             <a class="nav-link" href="cnge_psd" target="A">Change Password</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span onclick="lgout()">Log out</span></a>
+                            <a class="nav-link" href="login.php"><span onclick="lgout()">Log out</span></a>
                         </li>
 
                     </ul>
@@ -111,7 +111,7 @@
     </section>
     <script>
 function lgout(){
-    window.open("login.php",'_top');
+    //window.open("login.php",'_top');
 
     $.ajax({
                 url: "stud_dn_ajax.php",

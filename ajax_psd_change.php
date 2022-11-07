@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect("localhost","root","","scholarship");
+include("dbconnect.php");
 if($_POST['no']==1)
 {
 $ui=$_POST['uidr'];	

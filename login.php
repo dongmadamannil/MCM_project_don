@@ -93,7 +93,7 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
 
 
 <?php
-$conn=mysqli_connect("localhost","root","","scholarship");
+include("dbconnect.php");
 if(isset($_POST['lgn']))
 {
     $user=$_POST['uname'];
